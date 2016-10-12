@@ -2,29 +2,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Civil Life in the Vietnam War</title>
+
+	<title>UNICEF</title>
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	
   <link rel="stylesheet" type="text/css" href="style/animate.css">
+  <link rel="stylesheet" type="jQuery" href="typed.js-master">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/typed.js" type="text/javascript"></script>
+
+
+<script src="jquery.js"></script>
+<script src="typed.js"></script>
+
+<script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+<script type="text/javascript" src="js/vendor/jquery.waypoints.min.js"></script>
+<script src="js/home.js"></script>
+<script type="text/javascript" src="js/analytics.js"></script>
+
+
 	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="style/main.css">
+<!--
+<ul>
+  <li><a href="gamingwebsite.html">Home</a></li>
+  <li><a href="tipsandtricks.html">About Us!</a></li>
+  <li><a href="contact.asp">x1</a></li>
+  <li><a href="about.asp">x2</a></li>
+  <li style="float:right"><a class="active" href="#about">Test</a></li>
+</ul>
+!-->
+
+
+
+
+
+
+
+
+
 
 </head>
 <body>
 
 <style type="text/css">
 	body{
+
 	font-family: 'Decorative', sans-serif;
 	margin: 0;
 	padding: 0;
 }
+
 img{
 	max-width: 100%;
 }
@@ -36,25 +72,35 @@ button{
 	font-family: 'Impact', Charcoal, sans-serif;
 	background-color: #003333;
 }
+hr{
+	border-color: white;
+}
 #me{
 	width: 35em;
 	height: 35em;
 }
-#title{
+.active {
+    background-color: #4CAF50;
+}
+#info{
 	height: 150vh;
+	background-image: url("https://openclipart.org/image/2400px/svg_to_png/28707/Martouf-Logo-Unicef.png");
 	background-color: #003333;
 	color: white;
 	padding: 8em;
 	margin: 0;
 }
-#title h1{
-	font-size: 4em;
+
+#info h1{
+	font-size: 12em;
 }
-#title h2{
+#info h2{
 	font-size: 10em;
-}#title h3{
+}
+#info h3{
 	font-size: 3em;
-}#title p{
+}
+#info p{
 	font-size: 2em;
 }
 .button1:hover {
@@ -63,18 +109,21 @@ button{
     border: 3px solid white;
     text-decoration: none;
 }
-#about-me{
-	background-color: #00664d;
+#basis{
+	height: 100vh;
+	background-image: url("http://www.mbagusi.com/i/pokemon-desktop-background-wallpaper.jpg");
+	background-color: white;
 	padding: 10em;
 }
-#about-me h1{
+#basis h1{
 	color: black;
 	font-size: 4.5em;
 	font-family: 'Impact', Charcoal, sans-serif;
 }
-#about-me p{
+#basis p{
 	color: black;
 	font-size: 2.5em;
+	font-family: 'Impact', Charcoal, sans-serif;
 }
 .buttonCat{
 	border: 2px solid #555555;
@@ -96,7 +145,9 @@ button{
     color: black;
     border-radius: 60%;
 }
-#skills{
+#advanced{
+	height: 100vh;
+	background-image: url("http://eskipaper.com/images/league-of-legends-wallpaper-21.jpg");
 	padding-left: 10em;
 	padding-top: 6em;
 	padding-bottom: 5em;
@@ -104,48 +155,53 @@ button{
 	background-color: #006622;
 	color: white;
 }
-#skills h1{
+#advanced h1{
 	font-size: 3.5em;
 	font-family: 'Impact', Charcoal, sans-serif;
 }
-#skills p{
+#advanced p{
 	font-size: 2.5em;
 }
-#skills li{
+#advanced li{
 	font-size: 2em;
 }
-#skills a{
+#advanced a{
 	color: white;
 	text-decoration: bold;
 }
-#project{
+#build {
+	height: 100vh;
+	background-image: url("http://www.localwom.com/i/overwatch-high-quality-wallpapers.jpg");
 	padding-left: 10em;
 	padding-top: 5em;
 	padding-bottom: 2em;
 	padding-right: 1em;
 	background-color: #004d39;
 }
-#project h1{
+#build h1{
 	font-size: 4em;
 	color: black;
 	font-family: 'Impact', Charcoal, sans-serif;
 }
-#project h2{
+#build h2{
 	font-size: 4em;
 	font-family: 'Impact', Charcoal, sans-serif;
 }
-#project p{
+#build p{
 	padding-top: 2em;
 	padding-left: -20em;
 	font-size: 3em;
 }
 #contact{
 	background-color: #003311;
+	height: 80vh;
+	background-image: url("http://www.kokean.com/i/pc-gaming-wallpapers-high-definition.png");
 	color: white;
 	padding: 5em;
 }
 #contact h1{
-	font-size: 8em;
+	font-size: 5em;
+	font-family: 'Impact', Charcoal, sans-serif;
 }
 i{
 	padding-left: .5em;
@@ -155,71 +211,71 @@ i{
 	color: white;
 }
 @media screen and (max-width: 1047px) {
-	#title h1{
+	#info h1{
 		font-size: 10em;
 	}
-	#title h2{
+	#info h2{
 		font-size: 2.5em;
 	}
-	#title h3{
+	#info h3{
 		font-size: 3.5em;
 	}
 }
 @media screen and (max-width: 991px) {
-	#title h1{
+	#info h1{
 		font-size: 8.5em;
 	}
-	#title h2{
+	#info h2{
 		font-size: 2.5em;
 	}
-	#title h3{
+	#info h3{
 		font-size: 3.5em;
 	}
 }
 @media screen and (max-width: 775px) {
-	#title{
+	#info{
 		padding-top: 10em;
 		padding-left: 5em;
 	}
-	#title h1{
+	#info h1{
 		font-size: 8em;
 	}
 }
 @media screen and (max-width: 740px) {
-	#title{
+	#info{
 		padding: 4em;
 	}
-	#title h1{
+	#info h1{
 		font-size: 6em;
 	}
-	#about-me{
+	#basis{
 		padding: 4em;
 	}
-	#about-me p{
+	#basis p{
 		font-size: 2em;
 	}
-	#about-me h1{
+	#basis h1{
 		font-size: 4em;
 	}
-	#skills{
+	#advanced{
 		padding: 4em;
 	}
-	#skills h1{
+	#advanced h1{
 		font-size: 4em;
 	}
-	#skills p{
+	#advanced p{
 		font-size: 2em;
 	}
-	#project{
+	#build{
 		padding: 4em;
 	}
-	#project h1{
+	#build h1{
 		font-size: 4em;
 	}
-	#project h2{
+	#build h2{
 		font-size: 3em;
 	}
-	#project p{
+	#build p{
 		font-size: 2em;
 	}
 	#contact h1{
@@ -259,218 +315,102 @@ li a:hover {
     background-color: #111;
 }
 
-</style>
-</head>
-<body>
 
-<!--
-<ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#title">News about Jeff's Life</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about-me">About Me</a></li>
-</ul>
--->
+
  
 </style>
 </head>
 <body>
 
   <div class="page-content">
-      <div id="titleColor">
-        <div class="row col-md-12" id="title">
+      <div id="infoColor">
+        <div class="row col-md-12" id="info">
+       
             <div class="animated fadeInRightBig">
-              <h2 class="animated fadeInLeftBig">Hi, </h2>
-              <h1>Pretend we're all placed in the roles of a civilian during the Vietnam War.</h1>
-              <h3>Now we can start the presentation.<i class="fa fa-camera-retro fa-2x"></i></h3>
-              <HR WIDTH="60%" ALIGN="LEFT">
-              <img src="https://www.popularresistance.org/wp-content/uploads/2014/10/Screen-Shot-2014-10-17-at-9.39.39-AM.png" alt="LoL" style="width:480px;height:300px;">
-              <img src="https://i.ytimg.com/vi/YNR5L4taSY4/maxresdefault.jpg" alt="LoL" <img style="width:480px;height:300px;" align="RIGHT"> 
+
+
+
+
+
+
+
+
+
+              <h2 class="animated fadeInLeftBig"></h2>
+
+	<h1>BCA Unicef</h1>
+
+
+ <script src="jquery.js"></script>
+<script src="typed.js"></script>
+<script>
+    $(function(){
+        $(".element").typed({
+            strings: ["First sentence.", "Second sentence."],
+            typeSpeed: 500
+        });
+    });
+</script>
+qwfqfqwfqfqqwf
+
+<span class="element"></span>
+
+
+              <h2>X1.    </i></h1>
+              <h3></h3>
+   <img src="https://scontent.fewr1-1.fna.fbcdn.net/v/t34.0-12/14694914_1130975470326206_1079633967_n.jpg?oh=7dc30c9db0527823ee73ad19601f5479&oe=58008D5D" alt="Unicef" align="right"   
+ 
             <style style="text/css">
               <style style="text/css">
              
 
 
-<style style="text/css">
-.horizontally {
- height: 50px;	
- overflow: hidden;
- position: relative;
- background: #C11E0C;
- color: white;
- border: 1px #C11E0C;
-}
-.horizontally p {
- position: absolute;
- width: 100%;
- height: 100%;
- margin: 0;
- line-height: 100px;
- text-align: center;
- /* Starting position */
- -moz-transform:translateX(50%);
- -webkit-transform:translateX(50%);	
- transform:translateX(50%);
- /* Apply animation to this element */	
- -moz-animation: horizontally 7s linear infinite alternate;
- -webkit-animation: horizontally 7s linear infinite alternate;
- animation: horizontally 20s linear infinite alternate;
-}
-/* Move it (define the animation) */
-@-moz-keyframes horizontally {
- 0%   { -moz-transform: translateX(50%); }
- 100% { -moz-transform: translateX(-50%); }
-}
-@-webkit-keyframes horizontally {
- 0%   { -webkit-transform: translateX(50%); }
- 100% { -webkit-transform: translateX(-50%); }
-}
-@keyframes horizontally {
- 0%   { 
- -moz-transform: translateX(50%); /* Browser bug fix */
- -webkit-transform: translateX(50%); /* Browser bug fix */
- transform: translateX(50%); 		
- }
- 100% { 
- -moz-transform: translateX(-50%); /* Browser bug fix */
- -webkit-transform: translateX(-50%); /* Browser bug fix */
- transform: translateX(-50%); 
- }
-}
-</style>
+</div>
 
-<div class="horizontally">
-<p>My names Kevin and this is Jae. </p>
-<br><br><br><br><br>
-
- <audio id="myTune">
-  <source src="gunshots.ogg" type="audio/ogg">
-  <source src="gunshots.mp3" type="audio/mpeg">
-</audio>
-<button onclick="document.getElementById('myTune').play()">Fire!</button>
+</div>
 
 </div>
 
 </div>
 
-            </div>
-
-        </div>
-      </div>
-
-      <div class="row animated fadeInUp" id="about-me">
+<div class="row animated fadeInUp" id="basis">
         <div class="col-md-6">
-        <HR WIDTH="0%" ALIGN="LEFT">
-            <h1>Step after Step: Into the Campus</h1>
-            <HR WIDTH="0%" ALIGN="LEFT">
-            <p>The terror conveys throughout the air...</p>
-            <audio id="myTune4">
+        
+            <h1></h1>
+           
+            <p></p>
+            
+            <HR WIDTH="60%" ALIGN="LEFT"> 
+            
 
-  <source src="panic.ogg" type="audio/ogg">
-  <source src="panic.mp3" type="audio/mpeg">
-</audio>
-<button onclick="document.getElementById('myTune4').play()">Run!</button>
-<button onclick="document.getElementById('myTune4').pause()">Stop!</button>
-            <HR WIDTH="60%" ALIGN="LEFT">
-            <img src="http://www.factsrider.com/wp-content/uploads/2015/01/Vietnam-War.jpg" alt="LoL" style="width:480px;height:300px;">
-
-            <HR WIDTH="0%" ALIGN="LEFT">
-            <style style="text/css">
-
-.marquee {
- height: 50px;	
- overflow: hidden;
- position: relative;
- background: #00664d;
- color: black;
- font-family: 'Impact', Charcoal, sans-serif;
- border: 1px white;
-}
-.marquee p {
- position: absolute;
- width: 100%;
- height: 100%;
- margin: 0;
- line-height: 50px;
- text-align: center;
- /* Starting position */
- -moz-transform:translateX(100%);
- -webkit-transform:translateX(100%);	
- transform:translateX(100%);
- /* Apply animation to this element */	
- -moz-animation: scroll-left 5s linear infinite;
- -webkit-animation: scroll-left 5s linear infinite;
- animation: scroll-left 5s linear infinite;
-}
-/* Move it (define the animation) */
-@-moz-keyframes scroll-left {
- 0%   { -moz-transform: translateX(100%); }
- 100% { -moz-transform: translateX(-100%); }
-}
-@-webkit-keyframes scroll-left {
- 0%   { -webkit-transform: translateX(100%); }
- 100% { -webkit-transform: translateX(-100%); }
-}
-@keyframes scroll-left {
- 0%   { 
- -moz-transform: translateX(100%); /* Browser bug fix */
- -webkit-transform: translateX(100%); /* Browser bug fix */
- transform: translateX(100%); 		
- }
- 100% { 
- -moz-transform: translateX(-100%); /* Browser bug fix */
- -webkit-transform: translateX(-100%); /* Browser bug fix */
- transform: translateX(-100%); 
- }
-}
+            
+            
 </style>
 
-<div class="marquee">
-<p>Emphasizing Fear ♥. </p>
+
+
 </div>
 
         </div>
 
         
-        <div class="col-md-6">
-        <HR WIDTH="0%" ALIGN="LEFT">
-          <h1>The News</h1>
-          <HR WIDTH="0%" ALIGN="RIGHT">
-          <p>It finally reaches your mind. </p>
-          <HR WIDTH="0%" ALIGN="RIGHT">
-          <img src="http://s24.postimg.org/cm4qo7ab9/image.jpg" alt="LoL" <img style="width:480px;height:300px;">  
-          <script language="javascript">
-          function playIt()
-          {
-             return true;
-          }
-          </script>
+        <div class="col-md-12" id="basis">
+        
+          <h1>Game Choice</h1>
+          <HR WIDTH="60%" ALIGN="LEFT">
+          <p>There's a variety of games you can choose from many categories. <br> <br> </p>
+		  <p>Action : Overwatch <br>FPS : Black Ops <br>Shooter : MW3 <br>Adventure <br>Roleplay : League of Legends <br>MMORPG : Runescape <br> <br> These are just some examples but the categories range on extensively.  </p>
 
-<HR WIDTH="0%" ALIGN="RIGHT">
-         <audio id="myTune3">
-  <source src="crowd.ogg" type="audio/ogg">
-  <source src="crowd.mp3" type="audio/mpeg">
-</audio>
-<button onclick="document.getElementById('myTune3').play()">Commence!</button>
-<button onclick="document.getElementById('myTune3').pause()">Silence!</button>
-<HR WIDTH="0%" ALIGN="RIGHT">
-		   <p> What's to fear in the 'safety' outside Vietnam? </p>
-
-          <form action="" method="post">
-
-           <!-- <button type="button" class="buttonCat" onclick="playIt()">The Crowd.</button>
-                    <div id="embed"></div> document.getElementById("embed").innerHTML="<embed src='crowd.mp3' autostart=true loop=false volume=100 hidden=true>";-->
-
-
-            </form>     
+           
         </div>
       </div>
     
-    <div>
+    
 
-        <div class="row" id="skills">
-          <div class="col-md-6">
-            <h1>Who in fact is 'Eric Schechter'?</h1>
+        <div class="col-md-12" id="advanced">
+          <div class="col-md-12">
+            <h1>Statistics and Qualifications</h1>
+            <HR WIDTH="60%" ALIGN="LEFT">
             <!--<p>High School: <a href="http://bcts.bergen.org/index.php/bergen-county-academies">Let's begin.</a></p>-->
             <!--<p>**Explanation 1**</p>
               <h2>**Section Divider**</h2>
@@ -478,65 +418,34 @@ li a:hover {
                 <li>**Reason 2**asdfsadfasdfasdfas</li>
                 <li>**Reason 3**asdfsadfasdfasdf</li>
               </ul>-->
-			<HR WIDTH="0%" ALIGN="LEFT">
+			
+            
+           
+          </div>
+
+         
+        </div>
+
+      <div class="col-md-12" id="build">
+        <div class="col-md-12">
+        
+            <h1>Strategies and Concepts </h1>
             <HR WIDTH="60%" ALIGN="LEFT">
-          <img src="http://userscontent2.emaze.com/images/a2831434-042c-44e8-b6b0-6f7eea6c4b9e/c8a04e59-128f-4df6-8b74-859bf10d4aca.png" alt="LoL" <img style="width:480px;height:300px;">  
-          </div>
-
-          <div class="col-md-6" id="timeLine">
-            <h1>What a beautiful day. ☀☁. </h1>
-            <HR WIDTH="0%" ALIGN="RIGHT">
-            <p>For brilliant students all over the country... </p>
-            <p>Yet the draft had inevitably taken it all.</p>
-            <HR WIDTH="0%" ALIGN="RIGHT">
-           <audio id="myTune2">
-  <source src="birdsounds.ogg" type="audio/ogg">
-  <source src="birdsounds.mp3" type="audio/mpeg">
-</audio>
-<button onclick="document.getElementById('myTune2').play()">Chirp!</button>
-<button onclick="document.getElementById('myTune2').pause()">Meow!</button>
-
-          </div>
-        </div>
-
-      <div id="project">
-        <div class="row col-md-12">
-        <HR WIDTH="0%" ALIGN="LEFT">
-            <h1>The Protest. </h1>
-            <video width="400" height="300" controls>
-  <source src="protest.mp4" type="video/mp4">
-  <source src="protest.ogg" type="video/ogg">
-</video>
-
-<img src="http://www.gannett-cdn.com/-mm-/3211348d2ba68bcac278f8ff78b2fea8fb441d6c/c=179-0-2805-1977&r=x404&c=534x401/local/-/media/USATODAY/USATODAY/2013/08/22/1377203910000-AP-MARCH-ON-WASHINGTON-57889254.JPG" alt="LoL" <img style="width:480px;height:300px;" align="RIGHT"> 
-
-<h1>Hippie Culture & Drugs. </h1>
-<HR WIDTH="0%" ALIGN="LEFT">
-<img src="http://www.urchinmovement.com/wp-content/uploads/2010/05/hippies.jpg" alt="LoL" <img style="width:400px;height:300px;">
-<img src="http://www.ilsussidiario.net/img/WEB/Woodstock3R375_280509.jpg" alt="LoL" <img style="width:480px;height:300px;" align="RIGHT">  
-<HR WIDTH="0%" ALIGN="LEFT">
-<HR WIDTH="0%" ALIGN="LEFT">
-
-        </div>
-
-        <div class="row">
-          <div class="col-md-6">
-            <h2>Easter Egg!</h2> 
-
-          </div>
-
-          <!--<div class="col-md-6">
-          <p>It was created with friends Anoushka and Ben at a 12 hour hackathon (more like 9). It utilizes Facebook's API and basically is a Secret Santa generator. I worked on the front-end part with Anoushka mainly, as long as you're friends with one another on Facebook you're good to go. </p>!-->
-          </div>
+    
+         
         </div>
       </div>
 
     <script src="js/smoothscroll.js"></script>
           <div class="col-md-12" id="contact">
             <center>
-              <h1>Thank you, this concludes our presentation. </h1>
-              <a href="https://www.facebook.com/profile.php?id=100010852988511"><i class="fa fa-facebook fa-5x" id="icons"></i></a>
-              <a href="mailto:kevin4634@gmail.com"><i class="fa fa-envelope fa-5x"id="icons"></i></a>
+              <h1>If you seem interested in gaming now, you can head to some of these popular gaming distributors. </h1>
+              <br><br>
+              <a href="http://store.steampowered.com/"><i class="fa fa-share-alt fa-5x" style="color:white;" id="icons"></i></a>
+
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="http://us.blizzard.com/"><i class="fa fa-cloud fa-5x" style="color:aqua;" id="icons"></i></a>
+
             </center>
           </div>
         
